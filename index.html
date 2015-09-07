@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <link rel="stylesheet" src="/style.css">
+  <title>Spotify.Me</title>
+</head>
+<body>
+  <h1>Spotify.Me</h1>
+  
+  <input type="text" name="search-area" placeholder="Search..." autofocus>
+
+  <select id="search-type">
+    <option value="default">-- Search by Artist --</option>
+    <option value="default">-- Search by Album --</option>
+    <option value="default">-- Search by Song --</option>
+  </select>
+
+   <button id="search">Search</button>
+   <!-- preventdefault. -->
+ <div id="results"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/spotify.js"></script>
+
+</body>
+</html>
