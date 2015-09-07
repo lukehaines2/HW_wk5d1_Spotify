@@ -18,6 +18,7 @@ $(document).ready(function() {
       var dropdown2 = searchOption.val() + 's';
 
       $.each(output[dropdown2].items, function(index, dropdown2){
+        console.log($.each(output[dropdown2].items)
         var result = $("<div id='results'>" + dropdown2.name + "</div>");
         results.append(result);
         searchOption.get(0).selectedIndex = 0;
