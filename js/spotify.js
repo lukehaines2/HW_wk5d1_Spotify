@@ -7,12 +7,27 @@ $(document).ready(function() {
   var results = $('#results');
 
   searchOption.on('change', getSearch);
-  submitButton.on('click', getSearch);
+  // submitButton.on('click', getSearch);
 
   function getSearch(e) {
+
+  $.get('https://api.spotify.com/v1/search?q=' + searchInput.val() + '&type=' + searchOption.val(), function(output) {
+      console.log(output)
+      results.empty() 
     
-  $.get('https://api.spotify.com/v1/search?q=coldplay&type=artist' + searchInput.val + '&type'
-  };
+      var dropdown2 = searchOption.val() + 's';
+
+      $.each(output[dropdown2].items, function(index, dropdown2){
+        var result = $("<div id='results'>" + dropdown2.name + "</div>");
+        results.append(result);
+        searchOption.get(0).selectedIndex = 0;
+        })
+      })
+    }
 });
+
+// move global variables
+
+
 
 
