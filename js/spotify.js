@@ -17,11 +17,21 @@ $(document).ready(function() {
     
       var dropdown2 = searchOption.val() + 's';
 
-      $.each(output[dropdown2].items, function(index, dropdown2){
-        console.log($.each(output[dropdown2].items)
+      $.each(output[dropdown2].items, function(index, dropdown2) {
         var result = $("<div id='results'>" + dropdown2.name + "</div>");
         results.append(result);
         searchOption.get(0).selectedIndex = 0;
+        
+        // ATTEMPTING THE MP3 URL PLAY
+        var previewUrl = dropdown2.preview_url;
+        if searchOption.val() === 'track' {
+          <audio src="/test/audio.ogg">
+        <p>Your browser does not support the <code>audio</code> element.</p>
+        </audio>
+        previewUrl
+        
+        }
+        console.log(previewUrl);
         })
       })
     }
