@@ -1,4 +1,27 @@
 body {
-  background-color: hotpink;
+  background: linear-gradient(130deg, hotpink, black);
+  background-repeat: no-repeat;
   text-align: center;
+}
+
+h1 {
+  font-family: 'Slabo 27px', serif;
+  font-size: 60px;
+}
+
+#results {
+  font-family: 'Slabo 27px', serif;
+  font-size: 25px;
+}
+
+select {
+  font-family: 'Slabo 27px', serif;
+  font-size: 15px;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+div.container {
+  border: 2px;
+  border-color: red;
 }
