@@ -14,8 +14,8 @@ h1 {
   font-size: 25px;
 }
 
-select {
-  font-family: 'Slabo 27px', serif;
+select, #search-area {
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   border: 0;
   -webkit-appearance: none;

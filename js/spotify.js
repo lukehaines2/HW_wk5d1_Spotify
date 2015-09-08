@@ -18,18 +18,16 @@ $(document).ready(function() {
       var dropdown2 = searchOption.val() + 's';
 
       $.each(output[dropdown2].items, function(index, dropdown2) {
-        var result = $("<div id='results'>" + dropdown2.name + "</div>");
+        var result = $("<div id='results'>" + '<br>' + dropdown2.name + "</div>");
         results.append(result);
         searchOption.get(0).selectedIndex = 0;
         
         // ATTEMPTING THE MP3 URL PLAY
-        // var previewUrl = dropdown2.preview_url;
+        var previewUrl = dropdown2.preview_url;
         // if searchOption.val() === 'track' {
-        //   <audio src="https://p.scdn.co/mp3-preview/b9f7b7cd553c4aee3cd5146cfb068539047f5219">previewUrl
-        // <p>Your browser does not support the <code>audio</code> element.</p>
-        // </audio>
+        //   "'<audio src='" + previewUrl + '</audio>'
         // }
-        // console.log(previewUrl);
+        console.log(previewUrl);
         })
       })
     }
